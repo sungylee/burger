@@ -9,4 +9,4 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 - http://localhost:8080
 
 #Live Demo
-- hhttps://infinite-basin-46210.herokuapp.com
+- https://infinite-basin-46210.herokuapp.com
