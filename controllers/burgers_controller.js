@@ -27,11 +27,12 @@ router.post("/api/burgers", function(req, res) {
 //update devoured table and update devoured
 router.put("/api/burgers/:id", function(req, res) {
 
-  var condition = "id = " + req.params.id;
+  var condition = "id=" + req.params.id;
    
   console.log("condition", condition);
 
   burger.update({devoured: req.body.devoured}, condition, function(result) {
+    console.log(result);
     if (result.changedRows == 0) {
 
       // If no rows were changed, then the ID must not exist, so 404
