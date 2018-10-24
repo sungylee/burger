@@ -24,7 +24,8 @@
     <ul>
       {{#each burgers}}
         {{#if devoured}}
-          {{> burgers/burger-block devoured=false}}
+          {{!-- {{> burgers/burger-block devoured=false}} --}}
+       <li>{{this.id}}. {{this.burger_name}}</li>
         {{/if}}
       {{/each}}
       </ul>
